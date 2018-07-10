@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @v1_need.user %>
+</p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @v1_need.item %>
+</p>
+
+<p>
+  <strong>Budgeted:</strong>
+  <%= @v1_need.budgeted %>
+</p>
+
+<p>
+  <strong>Allocated:</strong>
+  <%= @v1_need.allocated %>
+</p>
+
+<%= link_to 'Edit', edit_v1_need_path(@v1_need) %> |
+<%= link_to 'Back', v1_needs_path %>

@@ -1,0 +1,37 @@
+<%= form_with(model: v1_need, local: true) do |form| %>
+  <% if v1_need.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(v1_need.errors.count, "error") %> prohibited this v1_need from being saved:</h2>
+
+      <ul>
+      <% v1_need.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user %>
+    <%= form.text_field :user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :item %>
+    <%= form.text_field :item %>
+  </div>
+
+  <div class="field">
+    <%= form.label :budgeted %>
+    <%= form.number_field :budgeted %>
+  </div>
+
+  <div class="field">
+    <%= form.label :allocated %>
+    <%= form.number_field :allocated %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

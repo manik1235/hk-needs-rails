@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: MyString
+  item: MyString
+  budgeted: 1
+  allocated: 1
+
+two:
+  user: MyString
+  item: MyString
+  budgeted: 1
+  allocated: 1
