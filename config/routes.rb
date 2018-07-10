@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :v2_needs
   resources :v1_needs
   resources :homes
   # root 'homes#index'

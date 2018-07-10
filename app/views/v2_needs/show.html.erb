@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @v2_need.user %>
+</p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @v2_need.item %>
+</p>
+
+<p>
+  <strong>Budgeted:</strong>
+  <%= @v2_need.budgeted %>
+</p>
+
+<p>
+  <strong>Allocated:</strong>
+  <%= @v2_need.allocated %>
+</p>
+
+<p>
+  <strong>Purchased:</strong>
+  <%= @v2_need.purchased %>
+</p>
+
+<p>
+  <strong>Abandoned:</strong>
+  <%= @v2_need.abandoned %>
+</p>
+
+<%= link_to 'Edit', edit_v2_need_path(@v2_need) %> |
+<%= link_to 'Back', v2_needs_path %>

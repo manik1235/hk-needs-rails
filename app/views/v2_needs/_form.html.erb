@@ -1,0 +1,47 @@
+<%= form_with(model: v2_need, local: true) do |form| %>
+  <% if v2_need.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(v2_need.errors.count, "error") %> prohibited this v2_need from being saved:</h2>
+
+      <ul>
+      <% v2_need.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user %>
+    <%= form.number_field :user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :item %>
+    <%= form.text_field :item %>
+  </div>
+
+  <div class="field">
+    <%= form.label :budgeted %>
+    <%= form.number_field :budgeted %>
+  </div>
+
+  <div class="field">
+    <%= form.label :allocated %>
+    <%= form.number_field :allocated %>
+  </div>
+
+  <div class="field">
+    <%= form.label :purchased %>
+    <%= form.datetime_select :purchased %>
+  </div>
+
+  <div class="field">
+    <%= form.label :abandoned %>
+    <%= form.datetime_select :abandoned %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
