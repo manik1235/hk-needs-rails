@@ -21,4 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* What am I?
+- This app serves both as a tracker for the HK's household budget, and a practice
+	application for building apps with Ruby on Rails.
+- This should use testing, mockups, and other good practices.
